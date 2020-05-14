@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Capstone Project for VIT                 %
+% LaTeX Template                           %
+% Version 0.1                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% Refer to https://www.sascha-frank.com/latex-font-size.html for font sizing in this document
+
+\documentclass{capstone-project}
+
+%%%% MODIFY THIS AREA %%%%%
+\newcommand{\projecttitle}{\uppercase{Title of the project}}
+\newcommand{\degreename}{Name of the degree}
+\newcommand{\guidename}{Name of Guide}
+\newcommand{\authorname}{John Doe}
+\newcommand{\regnum}{00BCE0000}
+\begin{document}
+
+%%%% Title %%%%
+\begin{titlepage}
+    \begin{center}
+        \vspace*{0.6in}
+        \textbf{\LARGE{\projecttitle}}\\
+        \vspace{0.6in}
+        \textit{\large{Submitted in partial fulfillment for the award of the degree of}}\\
+        \vspace{0.6in}
+        \textbf{\Large{\degreename}}\\
+        \vspace{0.9in}
+        \textit{\large{by}}\\
+        \vspace{0.6in}
+        \uppercase{\textbf{\Large{\authorname (\regnum)}}}\\
+        \vfill
+        \includegraphics[width=4in]{university.png}\\
+        \vspace{0.6in}
+        \textbf{\large{Name of the school}}\\
+        \vspace{0.3in}
+        \normalsize{Month/Year}
+    \end{center}
+\end{titlepage}
+
+%%%% Declaration %%%%
+\begin{center}
+    \vspace*{0.6in}
+    \includegraphics[width=4in]{university.png}\\
+    \vspace{0.6in}
+    \prechapter{Declaration}
+    \vspace{0.3in}
+\end{center}
+\paragraph{}
+I hereby declare that the thesis entitled “\projecttitle” submitted by me, for the award of the degree \degreename at
+VIT is a record of bonafide work carried out by me under the supervision of \guidename.
+
+\paragraph{}
+I further declare that the work reported in this thesis, has not been submitted and will not be submitted,
+either in part or in full, for the award of any other degree or diploma of this institute or of any other institute or University.
+
+\vfill
+\begin{minipage}[t]{0.5\textwidth}
+    Place: Chennai \\
+    Date: \today
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+    ~\\
+    \textbf{Signature of the Candidate}
+\end{minipage}
+
+\vspace*{3.0in}
+\clearpage
+
+%%%% Certificate %%%%
+\begin{center}
+    \vspace*{0.6in}
+    \includegraphics[width=4in]{university.png}\\
+    \vspace{0.6in}
+    \prechapter{Certificate}
+    \vspace{0.3in}
+\end{center}
+
+\paragraph{}
+This is to certify that the thesis entitled "\projecttitle" is prepared and submitted by \textbf{\authorname \hspace{0.01cm} (\regnum)} to VIT Chennai,
+in partial fulfillment of the requirement for the award of the degree \textbf{\degreename} is a bonafide record carried out under my guidance.
+The thesis fulfils the requirements as per the regulations of this University and in my opinion meets the necessary standards for submission.
+The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or
+diploma and the same is certified.
+
+\vspace{0.6in}
+\begin{table}[h]
+    \begin{tabular}{ll}
+        \textbf{Signature - Internal Examiner} & \textbf{Signature - External Examiner} \\
+        Name:                                  & Name:                                  \\
+        Date: \today                           & Date: \today                           \\
+    \end{tabular}
+\end{table}
+
+\vspace*{0.3in}
+\begin{flushleft}
+    Approved by the \textbf{Program Chair \degreename} \\
+    Name:                                              \\
+    Date: \today                                       \\
+\end{flushleft}
+
+\clearpage
+
+\prechapter{Abstract}\\
+\prechapter{Acknowledgement}\\
+\tableofcontents
+\listoftables
+\listoffigures
+\chapter{Introduction}
+This is some text \cite{einstein}
+\bibliographystyle{apalike}
+\bibliography[title=test]{references}
+\appendix
+\chapter{Appendix}
+\end{document}
