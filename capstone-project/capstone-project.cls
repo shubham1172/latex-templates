@@ -6,13 +6,17 @@
 \usepackage[a4paper, 
 left=1.5in, right=1in, top=1in, bottom=1in]{geometry}
 \usepackage{graphicx}
-\graphicspath{{assets/}}
+\usepackage{lipsum}
+\usepackage{cite}
 
 % Commands
 \newcommand{\prechapter}[1]{
     \uppercase{\textbf{\large{#1}}}
-    \addcontentsline{toc}{chapter}{\uppercase{#1}}
+    \addcontentsline{toc}{chapter}{#1}
 }
 
-% Bibliography
-\usepackage{cite}
+\renewcommand\bibname{References}
+
+% Miscellaneous
+\graphicspath{{assets/}}
+\setlength{\parskip}{\baselineskip}

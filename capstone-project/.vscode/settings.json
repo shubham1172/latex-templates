@@ -16,5 +16,15 @@
         "**.run.xml": true,
         "**.gz": true,
         "**.toc": true,
+        "**.bbl": true,
+        "**.blg": true,
+        "**.acn": true,
+        "**.glo": true,
+        "**.glsdefs": true,
+        "**.ist": true,
+        "**.alg": true,
+        "**.acr": true,
+        "**.glg": true,
+        "**.gls": true,
     }
 }
