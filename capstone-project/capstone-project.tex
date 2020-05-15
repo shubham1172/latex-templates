@@ -24,8 +24,24 @@
 
 \chapter{Introduction}
 
-This is some text and this is cool \cite{einstein}.
-
+This is how to cite - \cite{einstein}.
+Tables can be added like table \ref{tab:table1}.
+\begin{table}[h]
+    \begin{tabular}{ll}
+        \textbf{sl} & \textbf{value} \\
+        1           & 101            \\
+    \end{tabular}
+    \captionsetup{singlelinecheck = false, format= hang, justification=raggedright, font=footnotesize, labelsep=space}
+    \caption{Values table}
+    \label{tab:table1}
+\end{table}
+Figures can be added like figure \ref{fig:figure1}, do the following:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=2cm]{assets/university.png}
+    \caption{Place to learn, a chance to grow}
+    \label{fig:figure1}
+\end{figure}
 
 \bibliographystyle{apalike}
 \bibliography{references}
